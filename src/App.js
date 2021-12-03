@@ -11,7 +11,7 @@ import {
 } from '@stripe/react-stripe-js';
 import { useState } from 'react';
 
-const stripePromise = loadStripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
+const stripePromise = loadStripe(ADD-YOUR-STRIPE-PUBLIC-KEY);
 
 const CheckoutForm = () => {
   const stripe = useStripe();
