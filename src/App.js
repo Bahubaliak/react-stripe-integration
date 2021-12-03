@@ -11,7 +11,7 @@ import {
 } from '@stripe/react-stripe-js';
 import { useState } from 'react';
 
-const stripePromise = loadStripe(ADD-YOUR-STRIPE-PUBLIC-KEY);
+const stripePromise = loadStripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
 
 const CheckoutForm = () => {
   const stripe = useStripe();
@@ -49,6 +49,7 @@ const CheckoutForm = () => {
       <CardCvcElement />
       <input 
       type="text"
+      placeholder="postal code"
       value={postal_code}
       onChange={(e)=>{
       setPostalCode(e.target.value)
